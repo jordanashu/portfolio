@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { HeroScene } from './HeroScene';
+import { LazyImage } from './LazyImage';
 import { personalData } from '../data/portfolioData';
 import { ArrowDown, Sparkles, Terminal, Mail, Phone, ExternalLink, ShieldCheck, Cpu } from 'lucide-react';
 
@@ -252,7 +253,7 @@ export function Hero({ isMobile }) {
               ref={profileImageRef}
               className="relative z-20 w-[290px] sm:w-[340px] lg:w-[900px] h-[90%] flex items-end justify-center pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)]"
             >
-              <img
+              <LazyImage
                 src="/profile.png"
                 alt="Ashutosh Kumar Singh"
                 className="w-full h-full object-contain object-bottom select-none filter contrast-105 brightness-105 drop-shadow-[0_10px_35px_rgba(0,240,255,0.25)]"
