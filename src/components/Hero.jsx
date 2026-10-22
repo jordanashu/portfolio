@@ -182,7 +182,7 @@ export function Hero({ isMobile }) {
             </div>
 
             {/* Interactive Stats Grid */}
-            <div ref={statsContainerRef} className="grid grid-cols-2 sm:grid-cols-4 gap-3 ">
+            <div ref={statsContainerRef} className="grid grid-cols-2 sm:grid-cols-6 gap-2 ">
               {personalData.stats.slice(0, 4).map((stat, idx) => (
                 <div
                   key={idx}
@@ -250,7 +250,7 @@ export function Hero({ isMobile }) {
             {/* Foreground Real Photograph of Ashutosh */}
             <div
               ref={profileImageRef}
-              className="relative z-20 w-[290px] sm:w-[340px] lg:w-[900px] h-[78%] flex items-end justify-center pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)]"
+              className="relative z-20 w-[290px] sm:w-[340px] lg:w-[900px] h-[90%] flex items-end justify-center pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)]"
             >
               <img
                 src="/profile.png"
@@ -265,7 +265,7 @@ export function Hero({ isMobile }) {
             {/* Futuristic HUD floating overlay tags */}
             <div className="absolute top-2 right-4 z-30 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#070d1d]/85 border border-cyan-500/30 text-[11px] font-mono text-cyan-300 backdrop-blur-md shadow-lg pointer-events-none">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-              <span>CORE_ENGINE :: ONLINE</span>
+              <span>AI</span>
             </div>
 
             <div className="absolute bottom-2 left-4 z-30 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#070d1d]/85 border border-purple-500/30 text-[11px] font-mono text-purple-300 backdrop-blur-md shadow-lg pointer-events-none">
